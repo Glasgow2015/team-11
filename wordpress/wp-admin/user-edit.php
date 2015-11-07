@@ -414,8 +414,8 @@ if ( is_multisite() && is_network_admin() && ! IS_PROFILE_PAGE && current_user_c
 </tr>
 
 <tr class="user-url-wrap">
-	<th><label for="url"><?php _e('Website') ?></label></th>
-	<td><input type="url" name="url" id="url" value="<?php echo esc_attr( $profileuser->user_url ) ?>" class="regular-text code" /></td>
+	<th><label for="url"><?php _e('Telephone') ?></label></th>
+	<td><input type="url" name="url" id="url" value="<?php echo esc_attr( $profileuser->user_telephone ) ?>" class="regular-text code" /></td>
 </tr>
 
 <?php
