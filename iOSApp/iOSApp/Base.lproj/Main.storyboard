@@ -39,6 +39,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ROOT" id="AvU-3a-zc7">
+                        <barButtonItem key="leftBarButtonItem" title="Report" id="nhI-S4-QsA">
+                            <color key="tintColor" red="0.9933909407" green="0.9933909407" blue="0.9933909407" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="btnUser" id="yjh-lN-B9c">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
