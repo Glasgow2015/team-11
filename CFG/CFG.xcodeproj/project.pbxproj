@@ -14,6 +14,8 @@
 		254321581BEE976D00951141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254321561BEE976D00951141 /* LaunchScreen.storyboard */; };
 		254321631BEE976D00951141 /* CFGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254321621BEE976D00951141 /* CFGTests.swift */; };
 		2543216E1BEE976D00951141 /* CFGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543216D1BEE976D00951141 /* CFGUITests.swift */; };
+		2543217F1BEE9A1F00951141 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543217D1BEE9A1F00951141 /* RegisterViewController.swift */; };
+		254321801BEE9A1F00951141 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2543217E1BEE9A1F00951141 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		254321691BEE976D00951141 /* CFGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2543216D1BEE976D00951141 /* CFGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFGUITests.swift; sourceTree = "<group>"; };
 		2543216F1BEE976D00951141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2543217D1BEE9A1F00951141 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2543217E1BEE9A1F00951141 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		254321411BEE976D00951141 = {
 			isa = PBXGroup;
 			children = (
+				2543217D1BEE9A1F00951141 /* RegisterViewController.swift */,
+				2543217E1BEE9A1F00951141 /* RegisterViewController.xib */,
 				2543214C1BEE976D00951141 /* CFG */,
 				254321611BEE976D00951141 /* CFGTests */,
 				2543216C1BEE976D00951141 /* CFGUITests */,
@@ -233,6 +239,7 @@
 				254321581BEE976D00951141 /* LaunchScreen.storyboard in Resources */,
 				254321551BEE976D00951141 /* Assets.xcassets in Resources */,
 				254321531BEE976D00951141 /* Main.storyboard in Resources */,
+				254321801BEE9A1F00951141 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2543217F1BEE9A1F00951141 /* RegisterViewController.swift in Sources */,
 				254321501BEE976D00951141 /* ViewController.swift in Sources */,
 				2543214E1BEE976D00951141 /* AppDelegate.swift in Sources */,
 			);
@@ -485,6 +493,7 @@
 				254321741BEE976D00951141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		254321751BEE976D00951141 /* Build configuration list for PBXNativeTarget "CFGTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				254321771BEE976D00951141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		254321781BEE976D00951141 /* Build configuration list for PBXNativeTarget "CFGUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				2543217A1BEE976D00951141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
