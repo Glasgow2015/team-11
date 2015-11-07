@@ -1,5 +1,5 @@
 //
-//  loginViewController.swift
+//  LoginAlertViewController.swift
 //  CFG
 //
 //  Created by Mananchai Rojamornkul on 11/7/2558 BE.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class loginViewController: UIViewController {
+class LoginAlertViewController: UIAlertController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

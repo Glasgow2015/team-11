@@ -27,10 +27,22 @@
                                 <animations/>
                                 <state key="normal" title="Button"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="427" width="131" height="61"/>
+                                    <rect key="frame" x="29" y="427" width="131" height="61"/>
                                 </variation>
                                 <connections>
                                     <action selector="getImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGR-kG-zxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JI-oY-iHx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Alert!"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="226" y="427" width="131" height="61"/>
+                                </variation>
+                                <connections>
+                                    <action selector="alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsM-GW-mAR"/>
+                                    <action selector="getImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8N7-xi-0DX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +57,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="T6Y-ER-VFI"/>
+                                <exclude reference="5JI-oY-iHx"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CQA-hB-301"/>
@@ -56,6 +69,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="T6Y-ER-VFI"/>
+                                <include reference="5JI-oY-iHx"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="CQA-hB-301"/>
