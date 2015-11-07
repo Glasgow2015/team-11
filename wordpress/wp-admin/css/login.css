@@ -130,7 +130,8 @@ p {
 
 .login h1 a {
 	background-image: url(../images/w-logo-blue.png?ver=20131202);
-	background-image: none, url(../images/wordpress-logo.svg?ver=20131107);
+	/*background-image: none, url(../images/wordpress-logo.svg?ver=20131107);*/
+	background-image: none, url(../images/urbanroots_logo145px);
 	-webkit-background-size: 84px;
 	background-size: 84px;
 	background-position: center top;
