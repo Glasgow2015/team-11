@@ -9,7 +9,7 @@
 import Foundation
 
 enum CustomCell : String {
-    case item = "ItemCell"
+    case Item = "ItemCell"
     case Level = "LevelCell"
 }
 
