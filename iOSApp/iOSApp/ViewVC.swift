@@ -21,6 +21,9 @@ class ViewVC : UITableViewController{
         //tableView.sectionHeaderHeight = 90
         //tableView.rowHeight = UITableViewAutomaticDimension
         
+        var titleView = UIImageView(image: UIImage(named: "logo.png"))
+        self.navigationItem.titleView = titleView
+        
         tableView.registerNib(UINib(nibName: CustomCell.Project.rawValue, bundle: nil), forCellReuseIdentifier: CustomCell.Project.rawValue)
         tableView.layoutMargins = UIEdgeInsetsZero
     }
@@ -38,8 +41,7 @@ class ViewVC : UITableViewController{
     // MARK: - TableView Function
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 345
-        
+        return 300
     }
     
     // MARK: - TableView Data Source

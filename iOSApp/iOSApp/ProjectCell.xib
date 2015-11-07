@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-79" id="WkW-HM-Aug" customClass="ProjectCell" customModule="iOSApp" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-125" id="WkW-HM-Aug" customClass="ProjectCell" customModule="iOSApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WkW-HM-Aug" id="GTP-nc-oRB">
@@ -32,11 +32,11 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKF-fv-47K">
                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                         <animations/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
-                        <variation key="widthClass=compact" misplaced="YES">
-                            <rect key="frame" x="8" y="190" width="584" height="29"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="8" y="181" width="584" height="29"/>
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-rn-jp5">
@@ -45,8 +45,8 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
-                        <variation key="widthClass=compact" misplaced="YES">
-                            <rect key="frame" x="8" y="227" width="584" height="29"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="8" y="203" width="584" height="29"/>
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-6s-cfL">
@@ -55,24 +55,18 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
-                        <variation key="widthClass=compact" misplaced="YES">
-                            <rect key="frame" x="8" y="264" width="584" height="72.5"/>
-                        </variation>
                     </label>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="Q8C-rn-jp5" firstAttribute="leading" secondItem="NKF-fv-47K" secondAttribute="leading" id="KyE-6A-sBc"/>
-                    <constraint firstItem="HUD-6s-cfL" firstAttribute="leading" secondItem="Q8C-rn-jp5" secondAttribute="leading" id="Mo1-jv-fma"/>
-                    <constraint firstItem="Dt6-bZ-IEd" firstAttribute="top" secondItem="GTP-nc-oRB" secondAttribute="topMargin" constant="-8" id="QEb-cA-UXM"/>
-                    <constraint firstItem="HUD-6s-cfL" firstAttribute="top" secondItem="Q8C-rn-jp5" secondAttribute="bottom" constant="8" id="Vfa-hm-QtN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="189.5" id="brL-Tf-f93"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="NKF-fv-47K" secondAttribute="trailing" id="evO-Dr-r0o"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="NKF-fv-47K" secondAttribute="leading" id="gH7-ke-cGv"/>
-                    <constraint firstItem="NKF-fv-47K" firstAttribute="top" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="8" id="kXi-G5-hgi"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Dt6-bZ-IEd" secondAttribute="trailing" constant="-8" id="lDR-mw-7dH"/>
-                    <constraint firstItem="Dt6-bZ-IEd" firstAttribute="leading" secondItem="GTP-nc-oRB" secondAttribute="leadingMargin" constant="-8" id="mFv-fc-tSD"/>
-                    <constraint firstItem="Q8C-rn-jp5" firstAttribute="top" secondItem="NKF-fv-47K" secondAttribute="bottom" constant="8" id="soe-Os-kzT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HUD-6s-cfL" secondAttribute="bottom" id="4iJ-ln-Y7B"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HUD-6s-cfL" secondAttribute="trailing" id="ICT-RY-Ey2"/>
+                    <constraint firstItem="Dt6-bZ-IEd" firstAttribute="leading" secondItem="GTP-nc-oRB" secondAttribute="leadingMargin" constant="-8" id="KcI-Ga-cYN"/>
+                    <constraint firstItem="Dt6-bZ-IEd" firstAttribute="top" secondItem="GTP-nc-oRB" secondAttribute="topMargin" constant="-8" id="Qo9-dM-Tyr"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="HUD-6s-cfL" secondAttribute="leading" id="YGe-Zo-2Wd"/>
+                    <constraint firstItem="HUD-6s-cfL" firstAttribute="top" secondItem="GTP-nc-oRB" secondAttribute="topMargin" constant="221" id="kOk-u2-wtp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="159.5" id="pBY-dz-Yyc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dt6-bZ-IEd" secondAttribute="trailing" constant="-8" id="tV5-Ep-1Z6"/>
                 </constraints>
                 <variation key="default">
                     <mask key="subviews">
@@ -82,17 +76,14 @@
                         <exclude reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
-                        <exclude reference="QEb-cA-UXM"/>
-                        <exclude reference="brL-Tf-f93"/>
-                        <exclude reference="lDR-mw-7dH"/>
-                        <exclude reference="mFv-fc-tSD"/>
-                        <exclude reference="evO-Dr-r0o"/>
-                        <exclude reference="gH7-ke-cGv"/>
-                        <exclude reference="kXi-G5-hgi"/>
-                        <exclude reference="KyE-6A-sBc"/>
-                        <exclude reference="soe-Os-kzT"/>
-                        <exclude reference="Mo1-jv-fma"/>
-                        <exclude reference="Vfa-hm-QtN"/>
+                        <exclude reference="KcI-Ga-cYN"/>
+                        <exclude reference="Qo9-dM-Tyr"/>
+                        <exclude reference="pBY-dz-Yyc"/>
+                        <exclude reference="tV5-Ep-1Z6"/>
+                        <exclude reference="4iJ-ln-Y7B"/>
+                        <exclude reference="ICT-RY-Ey2"/>
+                        <exclude reference="YGe-Zo-2Wd"/>
+                        <exclude reference="kOk-u2-wtp"/>
                     </mask>
                 </variation>
                 <variation key="widthClass=compact">
@@ -103,17 +94,14 @@
                         <include reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
-                        <include reference="QEb-cA-UXM"/>
-                        <include reference="brL-Tf-f93"/>
-                        <include reference="lDR-mw-7dH"/>
-                        <include reference="mFv-fc-tSD"/>
-                        <include reference="evO-Dr-r0o"/>
-                        <include reference="gH7-ke-cGv"/>
-                        <include reference="kXi-G5-hgi"/>
-                        <include reference="KyE-6A-sBc"/>
-                        <include reference="soe-Os-kzT"/>
-                        <include reference="Mo1-jv-fma"/>
-                        <include reference="Vfa-hm-QtN"/>
+                        <include reference="KcI-Ga-cYN"/>
+                        <include reference="Qo9-dM-Tyr"/>
+                        <include reference="pBY-dz-Yyc"/>
+                        <include reference="tV5-Ep-1Z6"/>
+                        <include reference="4iJ-ln-Y7B"/>
+                        <include reference="ICT-RY-Ey2"/>
+                        <include reference="YGe-Zo-2Wd"/>
+                        <include reference="kOk-u2-wtp"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
@@ -123,7 +111,7 @@
                 <outlet property="lblLocation" destination="Q8C-rn-jp5" id="ba6-bv-Wmw"/>
                 <outlet property="lblTitle" destination="NKF-fv-47K" id="mUu-58-Oxo"/>
             </connections>
-            <point key="canvasLocation" x="70" y="99.5"/>
+            <point key="canvasLocation" x="70" y="76"/>
         </tableViewCell>
     </objects>
 </document>

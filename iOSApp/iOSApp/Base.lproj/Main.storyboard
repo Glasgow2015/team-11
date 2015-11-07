@@ -32,13 +32,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.46474510730000002" green="0.46474510730000002" blue="0.46474510730000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <connections>
                             <outlet property="dataSource" destination="stf-R9-L6l" id="rFg-lQ-i0b"/>
                             <outlet property="delegate" destination="stf-R9-L6l" id="vok-JF-Brr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Urban Roots" id="AvU-3a-zc7">
-                        <barButtonItem key="rightBarButtonItem" title="User" id="yjh-lN-B9c"/>
+                    <navigationItem key="navigationItem" title="ROOT" id="AvU-3a-zc7">
+                        <barButtonItem key="rightBarButtonItem" image="btnUser" id="yjh-lN-B9c">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="DtB-1U-SSe" id="9uj-CL-lkP"/>
@@ -49,4 +52,7 @@
             <point key="canvasLocation" x="687" y="226"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnUser" width="29" height="29"/>
+    </resources>
 </document>
