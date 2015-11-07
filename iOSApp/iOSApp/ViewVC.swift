@@ -38,7 +38,7 @@ class ViewVC : UITableViewController{
     // MARK: - TableView Function
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 380
+        return 345
         
     }
     

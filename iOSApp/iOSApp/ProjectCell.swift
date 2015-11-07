@@ -21,7 +21,7 @@ class ProjectCell : UITableViewCell{
         // Initialization code
         self.layoutMargins = UIEdgeInsetsZero
         self.selectionStyle = UITableViewCellSelectionStyle.None
-        //self.lblDescription.sizeToFit()
+        self.lblDescription.sizeToFit()
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

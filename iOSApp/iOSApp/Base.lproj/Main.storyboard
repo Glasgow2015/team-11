@@ -26,11 +26,12 @@
         <scene sceneID="FNU-as-u8Y">
             <objects>
                 <tableViewController title="MainPage" id="stf-R9-L6l" customClass="ViewVC" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DtB-1U-SSe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DtB-1U-SSe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.46474510730000002" green="0.46474510730000002" blue="0.46474510730000002" alpha="1" colorSpace="calibratedRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="stf-R9-L6l" id="rFg-lQ-i0b"/>
                             <outlet property="delegate" destination="stf-R9-L6l" id="vok-JF-Brr"/>
