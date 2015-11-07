@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="stf-R9-L6l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fR1-Ny-Ez0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="N3z-Gg-5JO">
+            <objects>
+                <navigationController id="fR1-Ny-Ez0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vFa-mq-GnM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="stf-R9-L6l" kind="relationship" relationship="rootViewController" id="cjh-gD-ACc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfX-WH-pXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="226"/>
+        </scene>
         <!--MainPage-->
         <scene sceneID="FNU-as-u8Y">
             <objects>
@@ -19,8 +36,8 @@
                             <outlet property="delegate" destination="stf-R9-L6l" id="vok-JF-Brr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sensitivity Level" id="AvU-3a-zc7">
-                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="yjh-lN-B9c"/>
+                    <navigationItem key="navigationItem" title="Urban Roots" id="AvU-3a-zc7">
+                        <barButtonItem key="rightBarButtonItem" title="User" id="yjh-lN-B9c"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="DtB-1U-SSe" id="9uj-CL-lkP"/>
@@ -28,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVJ-hU-EPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628.5" y="226"/>
+            <point key="canvasLocation" x="687" y="226"/>
         </scene>
     </scenes>
 </document>

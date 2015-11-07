@@ -10,22 +10,18 @@ import Foundation
 import UIKit
 
 class ViewVC : UITableViewController{
-    lazy var data = NSMutableData()
-    var objects = [AnyObject]()
     var user = User.shareInstance
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        user.item = []
-        //////////////////////////////////////////////////////////////////
-
+        //user.item = []
         //Set tableView data
-        tableView.estimatedRowHeight = 10
-        tableView.sectionHeaderHeight = 90
-        tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 10
+        //tableView.sectionHeaderHeight = 90
+        //tableView.rowHeight = UITableViewAutomaticDimension
         
-        tableView.registerNib(UINib(nibName: CustomCell.Level.rawValue, bundle: nil), forCellReuseIdentifier: CustomCell.Level.rawValue)
+        tableView.registerNib(UINib(nibName: CustomCell.Project.rawValue, bundle: nil), forCellReuseIdentifier: CustomCell.Project.rawValue)
         tableView.layoutMargins = UIEdgeInsetsZero
     }
     
@@ -56,9 +52,9 @@ class ViewVC : UITableViewController{
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Item.rawValue, forIndexPath: indexPath) as! ItemCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Project.rawValue, forIndexPath: indexPath) as! ProjectCell
         cell.lblTitle.text = user.item[indexPath.row].title
-        cell.lblDescription.text = (user.item[indexPath.row] as! Projects).description
+        cell.lblDescription.text = (user.item[indexPath.row] as! Project).description
         cell.lblLocation.text = "Glasgow"
         return cell
     

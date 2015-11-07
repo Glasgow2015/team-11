@@ -9,11 +9,11 @@
 import Foundation
 
 enum CustomCell : String {
-    case Item = "ItemCell"
+    case Project = "ProjectCell"
     case Level = "LevelCell"
 }
 
 enum CellType: String {
-    case Item = "Item"
+    case Project = "Project"
     case Level = "Level"
 }

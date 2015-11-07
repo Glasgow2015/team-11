@@ -10,11 +10,11 @@ import Foundation
 import Foundation
 import CoreLocation
 
-class Projects : Item{
+class Project : Item{
     
     var title : String = ""
     var location : CLLocationCoordinate2D = CLLocationCoordinate2D()
-    var type : String = "Projects"
+    var type : String = "Project"
     var date : String = ""
     var description : String = ""
     var user = User.shareInstance

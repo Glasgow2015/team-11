@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-class ItemCell : UITableViewCell{
+class ProjectCell : UITableViewCell{
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
-    @IBOutlet weak var thumb: UIImageView!
 
     
     override func awakeFromNib() {
