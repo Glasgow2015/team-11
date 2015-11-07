@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func alert(sender: AnyObject) {
