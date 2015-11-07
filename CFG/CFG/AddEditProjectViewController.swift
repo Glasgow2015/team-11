@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AddEditProjectViewController.swift
 //  CFG
 //
 //  Created by Mananchai Rojamornkul on 11/7/2558 BE.
@@ -8,21 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class AddEditProjectViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
+    
     @IBOutlet weak var imageView: UIImageView!
-
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        self.view = RegisterViewController().view
-        // Do any additional setup after loading the view, typically from a nib.
-        
-       
-        
+    @IBOutlet weak var des: UITextView!
+    @IBOutlet weak var location: UITextField!
+    
+    @IBAction func cancelBtn(sender: AnyObject) {
     }
-    
-    
-    // IT WORKS!!! DON'T CHANGE IT
+    @IBAction func saveBtn(sender: AnyObject) {
+    }
     @IBAction func getImage(sender: AnyObject) {
         var img = UIImagePickerController()
         img.delegate = self
@@ -36,18 +31,35 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         self.presentViewController(img, animated: true, completion: nil)
     }
-
+    
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var temp : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = temp
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2514E8151BEEA92200D270CA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514E8131BEEA92200D270CA /* ReportViewController.swift */; };
+		2514E8161BEEA92200D270CA /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2514E8141BEEA92200D270CA /* ReportViewController.xib */; };
+		2514E8191BEEAB7A00D270CA /* AddEditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514E8171BEEAB7A00D270CA /* AddEditProjectViewController.swift */; };
+		2514E81A1BEEAB7A00D270CA /* AddEditProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2514E8181BEEAB7A00D270CA /* AddEditProjectViewController.xib */; };
+		2514E81D1BEEB13200D270CA /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514E81B1BEEB13200D270CA /* loginViewController.swift */; };
+		2514E81E1BEEB13200D270CA /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2514E81C1BEEB13200D270CA /* loginViewController.xib */; };
 		2543214E1BEE976D00951141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543214D1BEE976D00951141 /* AppDelegate.swift */; };
 		254321501BEE976D00951141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543214F1BEE976D00951141 /* ViewController.swift */; };
 		254321531BEE976D00951141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254321511BEE976D00951141 /* Main.storyboard */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2514E8131BEEA92200D270CA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		2514E8141BEEA92200D270CA /* ReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		2514E8171BEEAB7A00D270CA /* AddEditProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddEditProjectViewController.swift; path = CFG/AddEditProjectViewController.swift; sourceTree = "<group>"; };
+		2514E8181BEEAB7A00D270CA /* AddEditProjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddEditProjectViewController.xib; path = CFG/AddEditProjectViewController.xib; sourceTree = "<group>"; };
+		2514E81B1BEEB13200D270CA /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		2514E81C1BEEB13200D270CA /* loginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
 		2543214A1BEE976D00951141 /* CFG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2543214D1BEE976D00951141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2543214F1BEE976D00951141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +93,12 @@
 		254321411BEE976D00951141 = {
 			isa = PBXGroup;
 			children = (
+				2514E81B1BEEB13200D270CA /* loginViewController.swift */,
+				2514E81C1BEEB13200D270CA /* loginViewController.xib */,
+				2514E8171BEEAB7A00D270CA /* AddEditProjectViewController.swift */,
+				2514E8181BEEAB7A00D270CA /* AddEditProjectViewController.xib */,
+				2514E8131BEEA92200D270CA /* ReportViewController.swift */,
+				2514E8141BEEA92200D270CA /* ReportViewController.xib */,
 				2543217D1BEE9A1F00951141 /* RegisterViewController.swift */,
 				2543217E1BEE9A1F00951141 /* RegisterViewController.xib */,
 				2543214C1BEE976D00951141 /* CFG */,
@@ -236,6 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2514E81A1BEEAB7A00D270CA /* AddEditProjectViewController.xib in Resources */,
+				2514E81E1BEEB13200D270CA /* loginViewController.xib in Resources */,
+				2514E8161BEEA92200D270CA /* ReportViewController.xib in Resources */,
 				254321581BEE976D00951141 /* LaunchScreen.storyboard in Resources */,
 				254321551BEE976D00951141 /* Assets.xcassets in Resources */,
 				254321531BEE976D00951141 /* Main.storyboard in Resources */,
@@ -264,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2514E8151BEEA92200D270CA /* ReportViewController.swift in Sources */,
 				2543217F1BEE9A1F00951141 /* RegisterViewController.swift in Sources */,
+				2514E81D1BEEB13200D270CA /* loginViewController.swift in Sources */,
 				254321501BEE976D00951141 /* ViewController.swift in Sources */,
 				2543214E1BEE976D00951141 /* AppDelegate.swift in Sources */,
+				2514E8191BEEAB7A00D270CA /* AddEditProjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CFG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UoG.CFG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CFG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UoG.CFG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
