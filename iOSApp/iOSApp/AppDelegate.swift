@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let user = User.shareInstance
+        
+        let prj = Projects(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
+        user.addItem(prj)
+        
         return true
     }
 

@@ -56,14 +56,11 @@ class ViewVC : UITableViewController{
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellType = user.item[indexPath.row]
-        switch CellType(rawValue: cellType.type)!{
-        case .Item:
-            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Item.rawValue, forIndexPath: indexPath) as! ItemCell
-            cell.lblTitle.text = user.item[indexPath.row].title
-            cell.lblDescription.text = user.item[indexPath.row].description
-            cell.lblLocation.text = "Glasgow"
-            return cell
-    }
+        let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Item.rawValue, forIndexPath: indexPath) as! ItemCell
+        cell.lblTitle.text = user.item[indexPath.row].title
+        cell.lblDescription.text = (user.item[indexPath.row] as! Projects).description
+        cell.lblLocation.text = "Glasgow"
+        return cell
     
+    }
 }

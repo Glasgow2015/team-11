@@ -11,8 +11,5 @@ import CoreLocation
 
 protocol Item {
     var title : String {get}
-    var location : CLLocationCoordinate2D {get}
-    var date : String {get}
-    var description : String {get}
     var type : String {get}
 }
