@@ -10,6 +10,7 @@ import UIKit
 
 class ReportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var lblBorder: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var location: UITextField!
     @IBAction func loadImage(sender: AnyObject) {
@@ -38,7 +39,8 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblBorder.layer.borderColor = UIColor.lightGrayColor().CGColor
+        lblBorder.layer.borderWidth = 2.0;
         // Do any additional setup after loading the view.
     }
 
