@@ -7,6 +7,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -110,6 +111,33 @@
                                     <rect key="frame" x="27" y="103" width="347" height="225"/>
                                 </variation>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSO-kn-35I">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="372" width="228" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWo-DR-hO4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="btnLocation"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="345" y="372" width="29" height="30"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYV-B8-Q2q">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="376" width="82" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,6 +147,9 @@
                                 <exclude reference="daW-fv-GaY"/>
                                 <exclude reference="lU8-2T-Y2h"/>
                                 <exclude reference="jDo-9L-hSI"/>
+                                <exclude reference="oSO-kn-35I"/>
+                                <exclude reference="IWo-DR-hO4"/>
+                                <exclude reference="oYV-B8-Q2q"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -127,6 +158,9 @@
                                 <include reference="daW-fv-GaY"/>
                                 <include reference="lU8-2T-Y2h"/>
                                 <include reference="jDo-9L-hSI"/>
+                                <include reference="oSO-kn-35I"/>
+                                <include reference="IWo-DR-hO4"/>
+                                <include reference="oYV-B8-Q2q"/>
                             </mask>
                         </variation>
                     </view>
@@ -140,6 +174,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnLocation" width="70" height="71"/>
         <image name="btnUpload" width="93" height="22"/>
         <image name="btnUser" width="29" height="29"/>
     </resources>
