@@ -353,3 +353,73 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+add_action( 'show_user_profile', 'yoursite_extra_user_profile_fields' );
+add_action( 'edit_user_profile', 'yoursite_extra_user_profile_fields' );
+function yoursite_extra_user_profile_fields( $user ) {
+?>
+<h3><?php _e("Extra profile information", "blank"); ?></h3>
+  <table class="form-table">
+    <tr>
+      <th><label for="phone"><?php _e("Phone"); ?></label></th>
+      <td>
+        <input type="text" name="phone" id="phone" class="regular-text" 
+            value="<?php echo esc_attr( get_the_author_meta( 'phone', $user->ID ) ); ?>" /><br />
+        <span class="description"><?php _e("Please enter your phone."); ?></span>
+    </td>
+    </tr>
+    <tr>
+      <th><label for="address"><?php _e("Address"); ?></label></th>
+      <td>
+        <input type="text" name="address" id="phone" class="regular-text" 
+            value="<?php echo esc_attr( get_the_author_meta( 'address', $user->ID ) ); ?>" /><br />
+        <span class="description"><?php _e("Please enter your ddress."); ?></span>
+    </td>
+    </tr>
+  </table>
+<?php
+}
+
+add_action( 'personal_options_update', 'yoursite_save_extra_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'yoursite_save_extra_user_profile_fields' );
+function yoursite_save_extra_user_profile_fields( $user_id ) {
+  $saved = false;
+  if ( current_user_can( 'edit_user', $user_id ) ) {
+    update_user_meta( $user_id, 'phone', $_POST['phone'] );
+    update_user_meta( $user_id, 'address', $_POST['address']);
+    $saved = true;
+  }
+  return true;
+}
+//1. Add a new form element...
+add_action( 'register_form', 'myplugin_register_form' );
+function myplugin_register_form() {
+
+    $first_name = ( ! empty( $_POST['first_name'] ) ) ? trim( $_POST['first_name'] ) : '';
+        
+        ?>
+        <p>
+            <label for="first_name"><?php _e( 'First Name', 'mydomain' ) ?><br />
+                <input type="text" name="first_name" id="first_name" class="input" value="<?php echo esc_attr( wp_unslash( $first_name ) ); ?>" size="25" /></label>
+        </p>
+        <?php
+    }
+
+    //2. Add validation. In this case, we make sure first_name is required.
+    add_filter( 'registration_errors', 'myplugin_registration_errors', 10, 3 );
+    function myplugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
+        
+        if ( empty( $_POST['first_name'] ) || ! empty( $_POST['first_name'] ) && trim( $_POST['first_name'] ) == '' ) {
+            $errors->add( 'first_name_error', __( '<strong>ERROR</strong>: You must include a first name.', 'mydomain' ) );
+        }
+
+        return $errors;
+    }
+
+    //3. Finally, save our extra registration user meta.
+    add_action( 'user_register', 'myplugin_user_register' );
+    function myplugin_user_register( $user_id ) {
+        if ( ! empty( $_POST['first_name'] ) ) {
+            update_user_meta( $user_id, 'first_name', trim( $_POST['first_name'] ) );
+        }
+    }

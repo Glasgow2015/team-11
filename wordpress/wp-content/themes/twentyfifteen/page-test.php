@@ -16,8 +16,9 @@ get_header(); ?>
 
 			echo "string";
 			echo "asdasd";
-			$rows = $wpdb->get_results( 'SELECT * FROM Report'); 
-			print_r($rows);
+			$user_ID = get_current_user_id();
+			echo $user_ID;
+			print_r(get_user_meta($user_ID, 'address'));
 		?>
 
 		</main><!-- .site-main -->

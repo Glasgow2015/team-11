@@ -6004,3 +6004,7 @@ p > video {
 		padding: 0;
 	}
 }
+
+.login > h1 > a {
+	display: none;
+}

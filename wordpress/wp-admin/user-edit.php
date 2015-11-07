@@ -413,11 +413,6 @@ if ( is_multisite() && is_network_admin() && ! IS_PROFILE_PAGE && current_user_c
 	</td>
 </tr>
 
-<tr class="user-url-wrap">
-	<th><label for="url"><?php _e('Telephone') ?></label></th>
-	<td><input type="url" name="url" id="url" value="<?php echo esc_attr( $profileuser->user_telephone ) ?>" class="regular-text code" /></td>
-</tr>
-
 <?php
 	foreach ( wp_get_user_contact_methods( $profileuser ) as $name => $desc ) {
 ?>
@@ -448,9 +443,9 @@ if ( is_multisite() && is_network_admin() && ! IS_PROFILE_PAGE && current_user_c
 
 <table class="form-table">
 <tr class="user-description-wrap">
-	<th><label for="description"><?php _e('Biographical Info'); ?></label></th>
+	<th><label for="description"><?php _e('Interests'); ?></label></th>
 	<td><textarea name="description" id="description" rows="5" cols="30"><?php echo $profileuser->description; // textarea_escaped ?></textarea>
-	<p class="description"><?php _e('Share a little biographical information to fill out your profile. This may be shown publicly.'); ?></p></td>
+	<p class="description"><?php _e('Share your interests to fill out your profile.'); ?></p></td>
 </tr>
 
 <?php
