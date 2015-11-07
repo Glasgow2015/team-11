@@ -38,9 +38,12 @@
                             <outlet property="delegate" destination="stf-R9-L6l" id="vok-JF-Brr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ROOT" id="AvU-3a-zc7">
+                    <navigationItem key="navigationItem" title="Back" id="AvU-3a-zc7">
                         <barButtonItem key="leftBarButtonItem" title="Report" id="nhI-S4-QsA">
                             <color key="tintColor" red="0.9933909407" green="0.9933909407" blue="0.9933909407" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="rt1-eo-B5K" kind="show" id="0ow-rE-ywZ"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="btnUser" id="yjh-lN-B9c">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,6 +56,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVJ-hU-EPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="687" y="226"/>
+        </scene>
+        <!--Report View Controller-->
+        <scene sceneID="6a2-jf-7c9">
+            <objects>
+                <viewController id="rt1-eo-B5K" customClass="ReportViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eDn-Br-cgH"/>
+                        <viewControllerLayoutGuide type="bottom" id="4I2-vL-se3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gas-Hn-w0z">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOC-hz-AyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="226"/>
         </scene>
     </scenes>
     <resources>
