@@ -9,17 +9,28 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<?php $st = (isset($_GET['usersearch']) ? $_GET['usersearch'] : '' ); ?>
+	<form action="" method="get">
+    <label for="usersearch">Search Term:</label>
+    <input name="usersearch" id="usersearch" value="<?php echo $st; ?>" type="text">
+    <input name="dosearch" type="submit" value="Submit">
+	</form>
 
 		<?php
-
-			echo "string";
-			echo "asdasd";
-			$user_ID = get_current_user_id();
-			echo $user_ID;
-			print_r(get_user_meta($user_ID, 'address'));
-		?>
+			echo $_POST["name"];
+		$blogusers = get_users('include=2,3,4,5,6,7,8');
+		foreach ($blogusers as $user) {
+   		 echo '<li>'
+    		. get_avatar($user->ID, 120) .
+    		'<br />'
+    			. $user->display_name .
+   			 '<br />'
+    			. $user->user_email .
+   			 '<br />'
+    			. get_user_meta($user->ID, 'description', true) .
+    			'</li>';
+}
+?>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->

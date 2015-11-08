@@ -34,15 +34,20 @@
     color: #3a4145;
 }
 
+.site-head::after,
 .hentry::after {
   border: 1px solid #3a4145;
+  background: #efefef none repeat scroll 0 0;
+  box-shadow: 0 0 0 5px transparent;
 }
 
 .hentry {
   border-bottom: 1px solid #3a4145;
 }
 
-.widget-area {
+.site-footer,
+.widget-area,
+.site-footer a {
   color: #3a4145;
 }
 
@@ -50,12 +55,40 @@ a:hover {
   color: #008338;
 }
 
-.widget-area {
-    color: #00833a;
+.img-home{
+	margin-top:10px;
+	height: 100px;
+	overflow:hidden;
+	}
+	
+.em-booking-form-details {
+    width: 180px;
+  }
+
+.page-title {
+	  display:none;
+	}
+
+.location-area {
+    width: 250px;
 }
 
-.img-home{
-	overflow:hidden;
-  	left: -40px; /* Change this */
-  	top: -40px; 
+.file-area {
+  font-size: 70%;
+}
+.site-footer {
+  background-color: #efefef;
+}
+
+.em-booking-login{
+	display: none;
 	}
+	
+ul{
+	    margin: 0 0 1.5em 0;
+	}
+
+  #dbem-bookings-table {
+    width: auto;
+    font-size: 1.3rem;
+  }

@@ -45,7 +45,7 @@
                     <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'casper_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
                 <?php endif; ?>
                 <h1 class="blog-title"><?php bloginfo( 'name' ); ?></h1>
-                <a href="http://ec2-54-216-244-128.eu-west-1.compute.amazonaws.com/wordpress/wp-login.php"><button type="button" class="button-full">Sign up/in</button></a>
+                <?php if ( !is_user_logged_in()) {  ?><a href="http://ec2-54-216-244-128.eu-west-1.compute.amazonaws.com/wordpress/wp-login.php"><button type="button" class="button-full">Sign up/Log in</button></a><?php } ?>
                
                 <a href="http://ec2-54-216-244-128.eu-west-1.compute.amazonaws.com/wordpress/index.php/report-incident/"><button type="button" class="button-full">Report</button></a>
                 <h2 class="blog-description"><?php bloginfo( 'description' ); ?></h2>

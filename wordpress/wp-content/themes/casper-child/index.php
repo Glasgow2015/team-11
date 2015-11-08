@@ -23,8 +23,8 @@ get_header(); ?>
             <h1 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
             <div class="img-home">
             <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-  					
-					set_post_thumbnail_size( 50, 50, array( 'center', 'center')  );
+  					the_post_thumbnail();
+					
 					}
 					?></div>
                     </div>
