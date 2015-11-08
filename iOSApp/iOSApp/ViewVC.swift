@@ -9,19 +9,20 @@
 import Foundation
 import UIKit
 
-class ViewVC : UITableViewController{
+
+
+class ViewVC : UITableViewController, UserControllerDelegate{
     var user = User.shareInstance
+    var userView: UserVC?
     
+    @IBAction func btnUserClicked(sender: AnyObject) {
+        showUserView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //user.item = []
-        //Set tableView data
-        //tableView.estimatedRowHeight = 10
-        //tableView.sectionHeaderHeight = 90
-        //tableView.rowHeight = UITableViewAutomaticDimension
-        
-        var titleView = UIImageView(image: UIImage(named: "logo.png"))
+
+        let titleView = UIImageView(image: UIImage(named: "logo.png"))
         self.navigationItem.titleView = titleView
         
         tableView.registerNib(UINib(nibName: CustomCell.Project.rawValue, bundle: nil), forCellReuseIdentifier: CustomCell.Project.rawValue)
@@ -60,5 +61,19 @@ class ViewVC : UITableViewController{
         cell.lblLocation.text = "Glasgow"
         return cell
     
+    }
+    
+    func showUserView() {
+        removeUserView()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        userView = storyboard.instantiateViewControllerWithIdentifier("Loading") as? UserVC
+        userView!.view.frame = navigationController!.view.bounds
+        userView!.delegate = self
+        navigationController?.view.addSubview(userView!.view)
+    }
+    
+    func removeUserView() {
+        userView?.view.removeFromSuperview()
+        userView = nil
     }
 }

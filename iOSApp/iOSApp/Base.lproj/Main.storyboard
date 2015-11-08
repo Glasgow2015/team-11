@@ -12,6 +12,19 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -57,6 +70,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="btnUser" id="yjh-lN-B9c">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnUserClicked:" destination="stf-R9-L6l" id="Tjk-5C-9Hf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -380,6 +396,253 @@
             </objects>
             <point key="canvasLocation" x="1497" y="226"/>
         </scene>
+        <!--UserVC-->
+        <scene sceneID="bMQ-4J-r3P">
+            <objects>
+                <viewController storyboardIdentifier="Loading" id="fjG-Jx-mYl" customClass="UserVC" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JLd-bo-nrx"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ec-S2-qrb"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.60000002384185791" contentMode="scaleToFill" id="XBW-LP-rXd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRP-d1-qfJ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="83" width="95" height="26"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xn-jb-YpH">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="127" width="95" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-ir-GXM">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="81" width="212" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iey-7b-a0G">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="122" width="212" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-Bl-f8e">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9933909407" green="0.9933909407" blue="0.9933909407" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Login"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="235" y="182" width="100" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp1-DT-cis">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9933909407" green="0.9933909407" blue="0.9933909407" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Register"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="182" width="99" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zWh-ge-vnw" kind="show" id="ICB-rr-ima"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFm-AF-b8O">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9933909407" green="0.9933909407" blue="0.9933909407" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Cancel"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="235" y="227" width="100" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnCancel:" destination="fjG-Jx-mYl" eventType="touchUpInside" id="6dR-HE-BIb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TRP-d1-qfJ"/>
+                                <exclude reference="9xn-jb-YpH"/>
+                                <exclude reference="hSd-ir-GXM"/>
+                                <exclude reference="iey-7b-a0G"/>
+                                <exclude reference="hXS-Bl-f8e"/>
+                                <exclude reference="hp1-DT-cis"/>
+                                <exclude reference="rFm-AF-b8O"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TRP-d1-qfJ"/>
+                                <include reference="9xn-jb-YpH"/>
+                                <include reference="hSd-ir-GXM"/>
+                                <include reference="iey-7b-a0G"/>
+                                <include reference="hXS-Bl-f8e"/>
+                                <include reference="hp1-DT-cis"/>
+                                <include reference="rFm-AF-b8O"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="rFm-AF-b8O" id="5XL-pb-fVI"/>
+                        <outlet property="btnLogin" destination="hXS-Bl-f8e" id="CQK-kq-e6F"/>
+                        <outlet property="btnRegister" destination="hp1-DT-cis" id="fEW-8Z-mqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCH-gl-pin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="-431"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="wjQ-Pt-Th4">
+            <objects>
+                <viewController id="zWh-ge-vnw" customClass="RegisterVC" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Suu-NH-8Gw"/>
+                        <viewControllerLayoutGuide type="bottom" id="max-Fo-vkb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SxT-3K-vPA">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-dM-ooN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3102114802" green="0.57323739230000004" blue="0.88200363010000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="77"/>
+                                </variation>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kcj-uO-fvB">
+                                <rect key="frame" x="0.0" y="-48" width="94" height="48"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="20" width="94" height="48"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxO-Au-1Ej">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="119" width="120" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3g-i2-igL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="158" width="120" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-R8-SlN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="197" width="120" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Due-fy-gom">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="236" width="120" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0s-45-woo">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="275" width="120" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-gk-oAU">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="314" width="120" height="31"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zdl-dM-ooN"/>
+                                <exclude reference="kcj-uO-fvB"/>
+                                <exclude reference="IxO-Au-1Ej"/>
+                                <exclude reference="e3g-i2-igL"/>
+                                <exclude reference="VNX-R8-SlN"/>
+                                <exclude reference="Due-fy-gom"/>
+                                <exclude reference="v0s-45-woo"/>
+                                <exclude reference="VYY-gk-oAU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Zdl-dM-ooN"/>
+                                <include reference="kcj-uO-fvB"/>
+                                <include reference="IxO-Au-1Ej"/>
+                                <include reference="e3g-i2-igL"/>
+                                <include reference="VNX-R8-SlN"/>
+                                <include reference="Due-fy-gom"/>
+                                <include reference="v0s-45-woo"/>
+                                <include reference="VYY-gk-oAU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblHeader" destination="Zdl-dM-ooN" id="ctb-16-KC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYy-ha-Vpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.5" y="-431"/>
+        </scene>
     </scenes>
     <resources>
         <image name="btnCancel" width="240" height="56"/>
@@ -387,5 +650,6 @@
         <image name="btnSave" width="240" height="56"/>
         <image name="btnUpload" width="93" height="22"/>
         <image name="btnUser" width="29" height="29"/>
+        <image name="logo" width="94" height="48"/>
     </resources>
 </document>

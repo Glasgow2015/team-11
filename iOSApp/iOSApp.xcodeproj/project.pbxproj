@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD63A50C1BEEBD9100759053 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD63A50B1BEEBD9100759053 /* ReportViewController.swift */; };
+		AD63A50E1BEECF2F00759053 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD63A50D1BEECF2F00759053 /* UserVC.swift */; };
+		AD63A5101BEEDB7E00759053 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD63A50F1BEEDB7E00759053 /* RegisterVC.swift */; };
 		AD775BF41BEE9868009AD313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD775BF31BEE9868009AD313 /* AppDelegate.swift */; };
 		AD775BF61BEE9868009AD313 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD775BF51BEE9868009AD313 /* ViewVC.swift */; };
 		AD775BF91BEE9868009AD313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD775BF71BEE9868009AD313 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		AD63A50B1BEEBD9100759053 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		AD63A50D1BEECF2F00759053 /* UserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		AD63A50F1BEEDB7E00759053 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		AD775BF01BEE9868009AD313 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD775BF31BEE9868009AD313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD775BF51BEE9868009AD313 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			children = (
 				AD63A50B1BEEBD9100759053 /* ReportViewController.swift */,
 				AD775BF51BEE9868009AD313 /* ViewVC.swift */,
+				AD63A50D1BEECF2F00759053 /* UserVC.swift */,
+				AD63A50F1BEEDB7E00759053 /* RegisterVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -320,12 +326,14 @@
 			files = (
 				AD63A50C1BEEBD9100759053 /* ReportViewController.swift in Sources */,
 				AD775C6D1BEEA5DC009AD313 /* Project.swift in Sources */,
+				AD63A50E1BEECF2F00759053 /* UserVC.swift in Sources */,
 				AD775C291BEE9C70009AD313 /* Item.swift in Sources */,
 				AD775BF61BEE9868009AD313 /* ViewVC.swift in Sources */,
 				AD775C2D1BEE9EFC009AD313 /* Helper.swift in Sources */,
 				AD775BF41BEE9868009AD313 /* AppDelegate.swift in Sources */,
 				AD775C6B1BEEA1D9009AD313 /* ProjectCell.swift in Sources */,
 				AD775C271BEE9BC4009AD313 /* User.swift in Sources */,
+				AD63A5101BEEDB7E00759053 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
