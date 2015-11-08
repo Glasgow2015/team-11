@@ -21,7 +21,6 @@ class ViewVC : UITableViewController, UserControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let titleView = UIImageView(image: UIImage(named: "logo.png"))
         self.navigationItem.titleView = titleView
         

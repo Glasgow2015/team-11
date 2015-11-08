@@ -24,7 +24,6 @@ class ProjectVC : UITableViewController{
     
     func insertNewObject(sender: AnyObject) {
         let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
-        user.addItem(prj)
         user.addAdminItem(prj)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
