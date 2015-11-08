@@ -15,6 +15,8 @@ class ProjectCell : UITableViewCell{
     @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
 
+    @IBOutlet weak var btnEdit: UIButton!
+    @IBOutlet weak var btnStar: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +24,8 @@ class ProjectCell : UITableViewCell{
         self.layoutMargins = UIEdgeInsetsZero
         self.selectionStyle = UITableViewCellSelectionStyle.None
         self.lblDescription.sizeToFit()
+        //self.btnEdit.hidden = true
+        self.btnStar.hidden = true
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

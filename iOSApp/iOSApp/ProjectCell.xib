@@ -62,6 +62,14 @@
                             <rect key="frame" x="333" y="152" width="30" height="28"/>
                         </variation>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-nf-coJ">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" backgroundImage="btnEdit"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="292" y="156" width="71" height="20"/>
+                        </variation>
+                    </button>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -81,6 +89,7 @@
                         <exclude reference="Q8C-rn-jp5"/>
                         <exclude reference="HUD-6s-cfL"/>
                         <exclude reference="nzi-dB-klP"/>
+                        <exclude reference="EFN-nf-coJ"/>
                     </mask>
                     <mask key="constraints">
                         <exclude reference="4iJ-ln-Y7B"/>
@@ -100,6 +109,7 @@
                         <include reference="Q8C-rn-jp5"/>
                         <include reference="HUD-6s-cfL"/>
                         <include reference="nzi-dB-klP"/>
+                        <include reference="EFN-nf-coJ"/>
                     </mask>
                     <mask key="constraints">
                         <include reference="4iJ-ln-Y7B"/>
@@ -115,6 +125,8 @@
             </tableViewCellContentView>
             <animations/>
             <connections>
+                <outlet property="btnEdit" destination="EFN-nf-coJ" id="jqj-Kf-tsE"/>
+                <outlet property="btnStar" destination="nzi-dB-klP" id="sch-l4-iBk"/>
                 <outlet property="lblDescription" destination="HUD-6s-cfL" id="fFT-w6-akp"/>
                 <outlet property="lblLocation" destination="Q8C-rn-jp5" id="ba6-bv-Wmw"/>
                 <outlet property="lblTitle" destination="NKF-fv-47K" id="mUu-58-Oxo"/>
@@ -123,6 +135,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="btnEdit" width="157" height="44"/>
         <image name="btnStar" width="66" height="63"/>
     </resources>
 </document>
