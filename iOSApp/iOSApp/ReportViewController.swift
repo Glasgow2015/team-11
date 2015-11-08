@@ -58,6 +58,7 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
         lblBorder.layer.borderColor = UIColor.lightGrayColor().CGColor
         lblBorder.layer.borderWidth = 2.0;
+        self.title = "Report Vandalism"
         // Do any additional setup after loading the view.
     }
 

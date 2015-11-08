@@ -24,7 +24,7 @@ class ProjectCell : UITableViewCell{
         self.layoutMargins = UIEdgeInsetsZero
         self.selectionStyle = UITableViewCellSelectionStyle.None
         self.lblDescription.sizeToFit()
-        //self.btnEdit.hidden = true
+        self.btnEdit.hidden = true
         self.btnStar.hidden = true
     }
     

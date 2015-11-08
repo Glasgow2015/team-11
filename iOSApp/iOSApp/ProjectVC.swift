@@ -10,17 +10,25 @@ import UIKit
 
 class ProjectVC : UITableViewController{
     var user = User.shareInstance
-
+    var titleHeader : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let titleView = UIImageView(image: UIImage(named: "logo.png"))
-        self.navigationItem.titleView = titleView
-        tableView.registerNib(UINib(nibName: CustomCell.Project.rawValue, bundle: nil), forCellReuseIdentifier: CustomCell.Project.rawValue)
+        self.title = titleHeader
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+        self.navigationItem.rightBarButtonItem = addButton
+        //let titleView = UIImageView(image: UIImage(named: "logo.png"))
+        //self.navigationItem.titleView = titleView
         tableView.layoutMargins = UIEdgeInsetsZero
     }
     
+    func insertNewObject(sender: AnyObject) {
+        let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
+        user.addItem(prj)
+        user.addAdminItem(prj)
+        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

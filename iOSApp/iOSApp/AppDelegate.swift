@@ -19,12 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let user = User.shareInstance
         
         let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
+        let prj2 = Project(title:"Code for good", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
         user.addItem(prj)
+        user.addItem(prj2)
         user.addAdminItem(prj)
         let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBarAppearace.tintColor = UIColor.blackColor()
+        navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.barTintColor = UIColor(red:0.02, green:0.57, blue:0.83, alpha:1.0)
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 16)!, NSForegroundColorAttributeName:UIColor.whiteColor()]
         return true
     }
 

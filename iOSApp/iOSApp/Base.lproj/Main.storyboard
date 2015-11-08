@@ -28,10 +28,6 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -115,16 +111,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Vandalism" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-US-0sW">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="119" y="64" width="163" height="38"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daW-fv-GaY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -281,7 +267,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="daW-fv-GaY" firstAttribute="top" secondItem="jDo-9L-hSI" secondAttribute="bottom" constant="8" id="1Uu-uJ-fej"/>
-                            <constraint firstItem="EAq-US-0sW" firstAttribute="leading" secondItem="gas-Hn-w0z" secondAttribute="leadingMargin" constant="99" id="6Lp-td-wCZ"/>
                             <constraint firstItem="cPk-XT-unk" firstAttribute="top" secondItem="jDo-9L-hSI" secondAttribute="bottom" constant="82" id="8QR-7z-JeG"/>
                             <constraint firstItem="4I2-vL-se3" firstAttribute="top" secondItem="MfJ-Rz-rnn" secondAttribute="bottom" constant="31" id="9Y8-FC-dfx"/>
                             <constraint firstItem="lU8-2T-Y2h" firstAttribute="top" secondItem="eDn-Br-cgH" secondAttribute="bottom" constant="39" id="AHZ-X6-hhL"/>
@@ -294,10 +279,8 @@
                             <constraint firstItem="cPk-XT-unk" firstAttribute="leading" secondItem="gas-Hn-w0z" secondAttribute="leadingMargin" constant="97" id="PZt-bp-Nod"/>
                             <constraint firstItem="cPk-XT-unk" firstAttribute="top" secondItem="oSO-kn-35I" secondAttribute="bottom" constant="8" id="QzC-bI-FyJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lU8-2T-Y2h" secondAttribute="trailing" constant="6" id="U9P-ja-Jmb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EAq-US-0sW" secondAttribute="trailing" constant="98" id="YsR-bt-9wG"/>
                             <constraint firstItem="4I2-vL-se3" firstAttribute="top" secondItem="jDo-9L-hSI" secondAttribute="bottom" constant="272" id="Z7p-mf-Jvm"/>
                             <constraint firstItem="oYV-B8-Q2q" firstAttribute="top" secondItem="daW-fv-GaY" secondAttribute="bottom" constant="19" id="bjj-d1-1aJ"/>
-                            <constraint firstItem="EAq-US-0sW" firstAttribute="top" secondItem="eDn-Br-cgH" secondAttribute="bottom" id="dhh-Wm-ZvB"/>
                             <constraint firstItem="4I2-vL-se3" firstAttribute="top" secondItem="lU8-2T-Y2h" secondAttribute="bottom" constant="272" id="dxD-2M-evA"/>
                             <constraint firstItem="oYV-B8-Q2q" firstAttribute="leading" secondItem="daW-fv-GaY" secondAttribute="leading" id="fA5-Hr-2PH"/>
                             <constraint firstItem="jDo-9L-hSI" firstAttribute="leading" secondItem="lU8-2T-Y2h" secondAttribute="leading" id="gfe-CH-cZr"/>
@@ -313,7 +296,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="EAq-US-0sW"/>
                                 <exclude reference="daW-fv-GaY"/>
                                 <exclude reference="lU8-2T-Y2h"/>
                                 <exclude reference="jDo-9L-hSI"/>
@@ -332,9 +314,6 @@
                                 <exclude reference="AHZ-X6-hhL"/>
                                 <exclude reference="CMQ-w3-vZb"/>
                                 <exclude reference="U9P-ja-Jmb"/>
-                                <exclude reference="6Lp-td-wCZ"/>
-                                <exclude reference="YsR-bt-9wG"/>
-                                <exclude reference="dhh-Wm-ZvB"/>
                                 <exclude reference="1Uu-uJ-fej"/>
                                 <exclude reference="E7m-xd-hO3"/>
                                 <exclude reference="bjj-d1-1aJ"/>
@@ -360,7 +339,6 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="EAq-US-0sW"/>
                                 <include reference="daW-fv-GaY"/>
                                 <include reference="lU8-2T-Y2h"/>
                                 <include reference="jDo-9L-hSI"/>
@@ -379,9 +357,6 @@
                                 <include reference="AHZ-X6-hhL"/>
                                 <include reference="CMQ-w3-vZb"/>
                                 <include reference="U9P-ja-Jmb"/>
-                                <include reference="6Lp-td-wCZ"/>
-                                <include reference="YsR-bt-9wG"/>
-                                <include reference="dhh-Wm-ZvB"/>
                                 <include reference="1Uu-uJ-fej"/>
                                 <include reference="E7m-xd-hO3"/>
                                 <include reference="bjj-d1-1aJ"/>
@@ -426,60 +401,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="73" id="ifz-sf-W6T">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifz-sf-W6T" id="ENI-In-Nn4">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-8Y-21v">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="0.0" width="105" height="23"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjc-mN-T3C">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="20" width="46" height="21"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxP-ZR-b7X">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="38" width="27" height="21"/>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                    <animations/>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="PPE-8Y-21v"/>
-                                            <exclude reference="fjc-mN-T3C"/>
-                                            <exclude reference="FxP-ZR-b7X"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="PPE-8Y-21v"/>
-                                            <include reference="fjc-mN-T3C"/>
-                                            <include reference="FxP-ZR-b7X"/>
-                                        </mask>
-                                    </variation>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="73" id="hb6-db-ogO">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hb6-db-ogO" id="8Ph-5o-3H4">

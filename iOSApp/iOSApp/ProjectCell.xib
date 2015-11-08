@@ -47,13 +47,6 @@
                             <rect key="frame" x="8" y="203" width="584" height="29"/>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-6s-cfL">
-                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-dB-klP">
                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                         <animations/>
@@ -70,6 +63,13 @@
                             <rect key="frame" x="292" y="156" width="71" height="20"/>
                         </variation>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-6s-cfL">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -87,9 +87,9 @@
                         <exclude reference="Dt6-bZ-IEd"/>
                         <exclude reference="NKF-fv-47K"/>
                         <exclude reference="Q8C-rn-jp5"/>
-                        <exclude reference="HUD-6s-cfL"/>
                         <exclude reference="nzi-dB-klP"/>
                         <exclude reference="EFN-nf-coJ"/>
+                        <exclude reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
                         <exclude reference="4iJ-ln-Y7B"/>
@@ -107,9 +107,9 @@
                         <include reference="Dt6-bZ-IEd"/>
                         <include reference="NKF-fv-47K"/>
                         <include reference="Q8C-rn-jp5"/>
-                        <include reference="HUD-6s-cfL"/>
                         <include reference="nzi-dB-klP"/>
                         <include reference="EFN-nf-coJ"/>
+                        <include reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
                         <include reference="4iJ-ln-Y7B"/>
