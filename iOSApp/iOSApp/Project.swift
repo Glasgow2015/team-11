@@ -31,6 +31,7 @@ class Project : Item{
         }
         self.date = date
         self.description = description
+        self.img = img
     }
     
     init (title : String, date : String, description : String, lat : String, long : String){

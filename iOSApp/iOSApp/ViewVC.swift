@@ -23,7 +23,9 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        p.work()
+        //p.work()
+        p.loadProject()
+        p.delegate = self
         
         let titleView = UIImageView(image: UIImage(named: "logo.png"))
         self.navigationItem.titleView = titleView
@@ -75,10 +77,13 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        
         let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Project.rawValue, forIndexPath: indexPath) as! ProjectCell
         cell.lblTitle.text = user.item[indexPath.row].title
         cell.lblDescription.text = (user.item[indexPath.row] as! Project).description
         cell.lblLocation.text = "Glasgow"
+        cell.imgView.image = (user.item[indexPath.row] as! Project).img
         if (user.username == "admin"){
             cell.btnEdit.hidden = false
             cell.btnStar.hidden = true
@@ -111,6 +116,13 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     
     func initVolunteerView() {
         self.navigationItem.leftBarButtonItem?.title = "Report"
+        tableView.reloadData()
+    }
+    
+    func finishLoading(imga : UIImage, date: String, description: String, latitude: String, longtitude : String) {
+        var pj = Project(title: "JP Morgan",img: imga, date: date, description: description, lat: latitude, long: longtitude)
+        print(imga)
+        user.addItem(pj);
         tableView.reloadData()
     }
 }

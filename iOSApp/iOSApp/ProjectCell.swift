@@ -15,6 +15,7 @@ class ProjectCell : UITableViewCell{
     @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
 
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var btnStar: UIButton!
     

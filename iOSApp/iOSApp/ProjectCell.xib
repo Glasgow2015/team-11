@@ -31,7 +31,7 @@
                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="widthClass=compact" fixedFrame="YES">
                             <rect key="frame" x="8" y="181" width="584" height="29"/>
@@ -41,7 +41,7 @@
                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="widthClass=compact" fixedFrame="YES">
                             <rect key="frame" x="8" y="203" width="584" height="29"/>
@@ -67,7 +67,7 @@
                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -127,6 +127,7 @@
             <connections>
                 <outlet property="btnEdit" destination="EFN-nf-coJ" id="jqj-Kf-tsE"/>
                 <outlet property="btnStar" destination="nzi-dB-klP" id="sch-l4-iBk"/>
+                <outlet property="imgView" destination="Dt6-bZ-IEd" id="HKc-qt-s3v"/>
                 <outlet property="lblDescription" destination="HUD-6s-cfL" id="fFT-w6-akp"/>
                 <outlet property="lblLocation" destination="Q8C-rn-jp5" id="ba6-bv-Wmw"/>
                 <outlet property="lblTitle" destination="NKF-fv-47K" id="mUu-58-Oxo"/>

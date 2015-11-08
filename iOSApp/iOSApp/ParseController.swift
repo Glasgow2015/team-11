@@ -11,7 +11,7 @@ import Parse
 import Bolts
 
 @objc protocol ParseControllerDelegate: class{
-    optional func finishLoading()
+    optional func finishLoading(imga : UIImage, date: String, description: String, latitude: String, longtitude : String)
     optional func finishSaving()
 }
 
@@ -80,13 +80,18 @@ class ParseController {
     func loadProject(){
         let user = User.shareInstance
         var query = PFQuery(className:"Project")
-        
+        var imga : UIImage?
+        var latitude : String = ""
+        var longtitude : String = ""
+        var d = "07/11/2015"
+        var des: String = ""
+        /*
         let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
         let prj2 = Project(title:"Code for good", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
         user.addItem(prj)
         user.addItem(prj2)
         user.addAdminItem(prj)
-        
+        */
         
         query.findObjectsInBackgroundWithBlock {
             (objects:[PFObject]?, error:NSError?) -> Void in
@@ -95,32 +100,32 @@ class ParseController {
             } else {
                 //println(objects)
                 for object in objects! {
-                    var des: String = object["description"] as! String
-                    var latitude : String = object["location_lat"] as! String
-                    var longtitude : String = object["location_long"] as! String
-                    var d = "07/11/2015"
-                    var t = ""
+                    des = object["description"] as! String
+                    latitude = object["location_lat"] as! String
+                    longtitude = object["location_long"] as! String
                     
-                    let mixPhoto = object["imageFile"] as! PFFile
                     
-                    //query?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) -> Void in
+                    let profileImage = object["imageFile"] as! PFFile
+                    profileImage.getDataInBackgroundWithBlock {
+                        (imageData: NSData?, error: NSError?) -> Void in
+                        //if (error == nil) {
+                            //print("IN image: \(imageData)")
+                            let image = UIImage(data:imageData!)
+                            imga = image!
+                            
+                        //}
+                    self.delegate?.finishLoading!(imga!, date: d , description: des, latitude: latitude, longtitude: longtitude)
+                    }
+                    //print("des=\(des) lat=\(latitude) imga=\(imga)")
+                    //title : String,img: UIImage, date : String, description : String, lat : String, long : String
                     
-                    mixPhoto.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                    
-                    ) }
-                    
-                    //var home = Project(title: t, date: d, description: des, lat: latitude, long: longtitude)
-                   
                 }
-                self.delegate?.finishLoading!()
+                
+                
             }
         }
         
     }
-    
-    
-    
-    
     
     func addressToLatLong(add:String){
         //Set Connection

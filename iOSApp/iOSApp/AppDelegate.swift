@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
         let prj2 = Project(title:"Code for good", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
-        user.addItem(prj)
-        user.addItem(prj2)
+        //user.addItem(prj)
+        //user.addItem(prj2)
         user.addAdminItem(prj)
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.tintColor = UIColor.whiteColor()
