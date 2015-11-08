@@ -27,7 +27,7 @@ class User {
     var email : String = ""
     var tel : String = ""
     var userLocation : CLLocationCoordinate2D = CLLocationCoordinate2D()
-
+    var userLevel : String = ""
     var item : [Item] = []
     func addItem(item:Item) {
         self.item.append(item)

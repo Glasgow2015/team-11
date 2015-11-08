@@ -54,6 +54,14 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-dB-klP">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" backgroundImage="btnStar"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="333" y="152" width="30" height="28"/>
+                        </variation>
+                    </button>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -72,6 +80,7 @@
                         <exclude reference="NKF-fv-47K"/>
                         <exclude reference="Q8C-rn-jp5"/>
                         <exclude reference="HUD-6s-cfL"/>
+                        <exclude reference="nzi-dB-klP"/>
                     </mask>
                     <mask key="constraints">
                         <exclude reference="4iJ-ln-Y7B"/>
@@ -90,6 +99,7 @@
                         <include reference="NKF-fv-47K"/>
                         <include reference="Q8C-rn-jp5"/>
                         <include reference="HUD-6s-cfL"/>
+                        <include reference="nzi-dB-klP"/>
                     </mask>
                     <mask key="constraints">
                         <include reference="4iJ-ln-Y7B"/>
@@ -112,4 +122,7 @@
             <point key="canvasLocation" x="70" y="76"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="btnStar" width="66" height="63"/>
+    </resources>
 </document>
