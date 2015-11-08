@@ -16,6 +16,7 @@
 		2514E8521BEEBB3300D270CA /* CFG2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514E8511BEEBB3300D270CA /* CFG2UITests.swift */; };
 		2514E8601BEEBC1500D270CA /* ParseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514E85F1BEEBC1500D270CA /* ParseController.swift */; };
 		2514E8621BEEBD1700D270CA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514E8611BEEBD1700D270CA /* Parse.framework */; };
+		2514E8641BEECCB300D270CA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514E8631BEECCB300D270CA /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2514E8531BEEBB3300D270CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2514E85F1BEEBC1500D270CA /* ParseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseController.swift; sourceTree = "<group>"; };
 		2514E8611BEEBD1700D270CA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2514E8631BEECCB300D270CA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2514E8621BEEBD1700D270CA /* Parse.framework in Frameworks */,
+				2514E8641BEECCB300D270CA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +105,7 @@
 		2514E8301BEEBB3300D270CA /* CFG2 */ = {
 			isa = PBXGroup;
 			children = (
+				2514E8631BEECCB300D270CA /* Bolts.framework */,
 				2514E8611BEEBD1700D270CA /* Parse.framework */,
 				2514E8311BEEBB3300D270CA /* AppDelegate.swift */,
 				2514E8331BEEBB3300D270CA /* ViewController.swift */,
@@ -500,6 +504,7 @@
 				2514E8581BEEBB3300D270CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2514E8591BEEBB3300D270CA /* Build configuration list for PBXNativeTarget "CFG2Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				2514E85B1BEEBB3300D270CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2514E85C1BEEBB3300D270CA /* Build configuration list for PBXNativeTarget "CFG2UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				2514E85E1BEEBB3300D270CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
