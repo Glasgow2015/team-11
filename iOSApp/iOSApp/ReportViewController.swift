@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ReportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
+class ReportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate,MKMapViewDelegate,CLLocationManagerDelegate {
+    
+    var loc:CLLocationCoordinate2D = CLLocationCoordinate2D()
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var lblBorder: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var location: UITextField!
+    
     @IBAction func loadImage(sender: AnyObject) {
-        var img = UIImagePickerController()
+        let img = UIImagePickerController()
         img.delegate = self
         img.allowsEditing = false;
         
@@ -27,6 +32,22 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
         }
         
         self.presentViewController(img, animated: true, completion: nil)
+        
+    }
+    
+    func initLocationMan(){
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.startUpdatingLocation()
+        loc =  CLLocationCoordinate2D()
+        print("lat: \(loc.latitude) long:\(loc.longitude)")
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        loc = manager.location!.coordinate
+        //print("lat: \(loc.latitude) long:\(loc.longitude)")
     }
     
    
@@ -35,15 +56,8 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     @IBAction func saveBtn(sender: AnyObject) {
         if(imageView.image != nil){
-            /*
-            let post = PFObject(className: "Report")
-            var imageData = UIImagePNGRepresentation(self.imageView.image!)
-            var parseImageFile = PFFile(name:"name",data: imageData!)
-            post["imageFile"] = parseImageFile
-            post.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-                print("file has been saved.")
-            }
-            */
+            let p = ParseController();
+            p.addReport(imageView.image!,loc: loc,des: txtDescription.text);
         }
     }
     @IBAction func cancelBtn(sender: AnyObject) {
@@ -65,6 +79,8 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
         txtDescription.layer.cornerRadius = 3
         
         self.title = "Report Vandalism"
+        
+        initLocationMan()
         // Do any additional setup after loading the view.
     }
 

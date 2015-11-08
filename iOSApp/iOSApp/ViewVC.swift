@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
+import Parse
 
 
-
-class ViewVC : UITableViewController, UserControllerDelegate{
+class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDelegate{
     var user = User.shareInstance
     var userView: UserVC?
+    let p = ParseController()
     
     @IBAction func btnUserClicked(sender: AnyObject) {
         showUserView()
@@ -21,6 +22,10 @@ class ViewVC : UITableViewController, UserControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+            p.work()
+        
         let titleView = UIImageView(image: UIImage(named: "logo.png"))
         self.navigationItem.titleView = titleView
         

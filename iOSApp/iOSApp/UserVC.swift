@@ -18,8 +18,19 @@ class UserVC: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
     @IBOutlet weak var btnCancel: UIButton!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     @IBAction func btnCancel(sender: AnyObject) {
+        self.delegate?.removeUserView!()
+    }
+    
+    @IBAction func btnLogin(sender: AnyObject) {
+        if(username.text == "admin"){
+            
+        }else{
+            
+        }
         self.delegate?.removeUserView!()
     }
     

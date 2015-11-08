@@ -9,6 +9,7 @@
 import Foundation
 import Foundation
 import CoreLocation
+import UIKit
 
 class Project : Item{
     
@@ -18,7 +19,19 @@ class Project : Item{
     var date : String = ""
     var description : String = ""
     var user = User.shareInstance
+    var img : UIImage?
     
+    
+    init (title : String,img: UIImage, date : String, description : String, lat : String, long : String){
+        self.title = title
+        if(lat == "" || long == ""){
+            self.location = CLLocationCoordinate2D(latitude: 0.00, longitude: 0.00)
+        }else{
+            self.location = CLLocationCoordinate2D(latitude: Double(lat)!, longitude: Double(long)!)
+        }
+        self.date = date
+        self.description = description
+    }
     
     init (title : String, date : String, description : String, lat : String, long : String){
         self.title = title

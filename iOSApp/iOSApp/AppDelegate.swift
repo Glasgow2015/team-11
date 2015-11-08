@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.barTintColor = UIColor(red:0.02, green:0.57, blue:0.83, alpha:1.0)
         navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 16)!, NSForegroundColorAttributeName:UIColor.whiteColor()]
+       
+        
+        //init Parse
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("rfTxJk2CscZSRGpKXJrjV0tWrh2iQka2chAEllIY",
+            clientKey: "zkGd1VT7RF2dT0c66LiNjVa6faA5qkwvBqmFIfgh")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         return true
     }
 

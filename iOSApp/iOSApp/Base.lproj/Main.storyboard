@@ -31,6 +31,10 @@
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -64,8 +68,10 @@
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="A7m-i2-DlD">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A7m-i2-DlD" id="bgu-Ng-P8r">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -129,8 +135,7 @@
                                         <exclude reference="UVe-8V-VID"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="18" y="335" width="93" height="22"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="UVe-8V-VID"/>
                                     </mask>
@@ -189,9 +194,6 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="410" width="99" height="21"/>
-                                </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-XT-unk">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -326,22 +328,26 @@
                                 <exclude reference="sB9-bB-UYT"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3GP-OZ-3YA"/>
-                                <exclude reference="PtZ-Ri-BkN"/>
-                                <exclude reference="Rf7-UF-R5M"/>
-                                <exclude reference="YKV-7t-7YT"/>
-                                <exclude reference="qhg-2e-WAV"/>
-                                <exclude reference="4mL-gA-wRD"/>
-                                <exclude reference="SSH-W9-6Ip"/>
-                                <exclude reference="Zry-73-Mfv"/>
-                                <exclude reference="cLb-s0-2td"/>
-                                <exclude reference="bjj-d1-1aJ"/>
-                                <exclude reference="fA5-Hr-2PH"/>
+                                <exclude reference="6vB-gd-g3R"/>
+                                <exclude reference="9Y8-FC-dfx"/>
+                                <exclude reference="xlc-Jj-PBH"/>
                                 <exclude reference="Icq-d8-hF3"/>
                                 <exclude reference="ZyO-Km-HBS"/>
                                 <exclude reference="v67-pU-pKr"/>
+                                <exclude reference="xSB-gE-cJE"/>
+                                <exclude reference="yDo-Qf-7HC"/>
+                                <exclude reference="cLb-s0-2td"/>
+                                <exclude reference="08j-PI-nQ1"/>
+                                <exclude reference="O8l-ly-DrH"/>
+                                <exclude reference="h05-Zv-I3T"/>
+                                <exclude reference="n1j-RU-IZM"/>
                                 <exclude reference="GGN-z1-00B"/>
                                 <exclude reference="M7D-Ec-JdK"/>
+                                <exclude reference="4mL-gA-wRD"/>
+                                <exclude reference="SSH-W9-6Ip"/>
+                                <exclude reference="Zry-73-Mfv"/>
+                                <exclude reference="bjj-d1-1aJ"/>
+                                <exclude reference="fA5-Hr-2PH"/>
                                 <exclude reference="2Ff-U0-Y14"/>
                                 <exclude reference="8XN-Sv-xW5"/>
                                 <exclude reference="CKV-tR-iH5"/>
@@ -351,15 +357,11 @@
                                 <exclude reference="Uhp-dA-PoN"/>
                                 <exclude reference="ok5-yP-ZZW"/>
                                 <exclude reference="vc9-2Q-Zsm"/>
-                                <exclude reference="xSB-gE-cJE"/>
-                                <exclude reference="yDo-Qf-7HC"/>
-                                <exclude reference="6vB-gd-g3R"/>
-                                <exclude reference="9Y8-FC-dfx"/>
-                                <exclude reference="xlc-Jj-PBH"/>
-                                <exclude reference="08j-PI-nQ1"/>
-                                <exclude reference="O8l-ly-DrH"/>
-                                <exclude reference="h05-Zv-I3T"/>
-                                <exclude reference="n1j-RU-IZM"/>
+                                <exclude reference="3GP-OZ-3YA"/>
+                                <exclude reference="PtZ-Ri-BkN"/>
+                                <exclude reference="Rf7-UF-R5M"/>
+                                <exclude reference="YKV-7t-7YT"/>
+                                <exclude reference="qhg-2e-WAV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -376,22 +378,26 @@
                                 <include reference="sB9-bB-UYT"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3GP-OZ-3YA"/>
-                                <include reference="PtZ-Ri-BkN"/>
-                                <exclude reference="Rf7-UF-R5M"/>
-                                <include reference="YKV-7t-7YT"/>
-                                <include reference="qhg-2e-WAV"/>
-                                <exclude reference="4mL-gA-wRD"/>
-                                <include reference="SSH-W9-6Ip"/>
-                                <include reference="Zry-73-Mfv"/>
-                                <include reference="cLb-s0-2td"/>
-                                <include reference="bjj-d1-1aJ"/>
-                                <include reference="fA5-Hr-2PH"/>
+                                <include reference="6vB-gd-g3R"/>
+                                <include reference="9Y8-FC-dfx"/>
+                                <include reference="xlc-Jj-PBH"/>
                                 <include reference="Icq-d8-hF3"/>
                                 <include reference="ZyO-Km-HBS"/>
                                 <include reference="v67-pU-pKr"/>
+                                <include reference="xSB-gE-cJE"/>
+                                <include reference="yDo-Qf-7HC"/>
+                                <include reference="cLb-s0-2td"/>
+                                <include reference="08j-PI-nQ1"/>
+                                <include reference="O8l-ly-DrH"/>
+                                <include reference="h05-Zv-I3T"/>
+                                <include reference="n1j-RU-IZM"/>
                                 <include reference="GGN-z1-00B"/>
                                 <include reference="M7D-Ec-JdK"/>
+                                <exclude reference="4mL-gA-wRD"/>
+                                <include reference="SSH-W9-6Ip"/>
+                                <include reference="Zry-73-Mfv"/>
+                                <include reference="bjj-d1-1aJ"/>
+                                <include reference="fA5-Hr-2PH"/>
                                 <include reference="2Ff-U0-Y14"/>
                                 <include reference="8XN-Sv-xW5"/>
                                 <include reference="CKV-tR-iH5"/>
@@ -401,15 +407,11 @@
                                 <include reference="Uhp-dA-PoN"/>
                                 <include reference="ok5-yP-ZZW"/>
                                 <exclude reference="vc9-2Q-Zsm"/>
-                                <include reference="xSB-gE-cJE"/>
-                                <include reference="yDo-Qf-7HC"/>
-                                <include reference="6vB-gd-g3R"/>
-                                <include reference="9Y8-FC-dfx"/>
-                                <include reference="xlc-Jj-PBH"/>
-                                <include reference="08j-PI-nQ1"/>
-                                <include reference="O8l-ly-DrH"/>
-                                <include reference="h05-Zv-I3T"/>
-                                <include reference="n1j-RU-IZM"/>
+                                <include reference="3GP-OZ-3YA"/>
+                                <include reference="PtZ-Ri-BkN"/>
+                                <exclude reference="Rf7-UF-R5M"/>
+                                <include reference="YKV-7t-7YT"/>
+                                <include reference="qhg-2e-WAV"/>
                             </mask>
                         </variation>
                     </view>
@@ -429,14 +431,17 @@
             <objects>
                 <tableViewController id="Leu-8g-b1o" customClass="ProjectVC" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="WCG-dC-yby">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="73" id="hb6-db-ogO">
+                                <rect key="frame" x="0.0" y="92" width="600" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hb6-db-ogO" id="8Ph-5o-3H4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="72.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-Xc-pdq">
@@ -544,7 +549,7 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="129" y="137" width="212" height="30"/>
                                 </variation>
@@ -615,6 +620,8 @@
                         <outlet property="btnCancel" destination="rFm-AF-b8O" id="5XL-pb-fVI"/>
                         <outlet property="btnLogin" destination="hXS-Bl-f8e" id="CQK-kq-e6F"/>
                         <outlet property="btnRegister" destination="hp1-DT-cis" id="fEW-8Z-mqH"/>
+                        <outlet property="password" destination="iey-7b-a0G" id="F9d-vV-chB"/>
+                        <outlet property="username" destination="hSd-ir-GXM" id="9HQ-wD-XVK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCH-gl-pin" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -630,6 +637,7 @@
                         <viewControllerLayoutGuide type="bottom" id="max-Fo-vkb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SxT-3K-vPA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-dM-ooN">
@@ -755,15 +763,6 @@
                                     <rect key="frame" x="120" y="276" width="223" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-5v-sTX">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="315" width="223" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ff-oa-Nty">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -771,6 +770,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="237" y="383" width="106" height="24"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnRegister:" destination="zWh-ge-vnw" eventType="touchUpInside" id="amT-4X-9Jr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAg-tB-2yR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -783,6 +785,15 @@
                                     <segue destination="fR1-Ny-Ez0" kind="show" id="EVn-C0-6pk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-qi-pHv">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="120" y="315" width="223" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -801,9 +812,9 @@
                                 <exclude reference="cmp-wx-55V"/>
                                 <exclude reference="1pr-Yg-ygN"/>
                                 <exclude reference="HB7-0c-SPO"/>
-                                <exclude reference="HIV-5v-sTX"/>
                                 <exclude reference="4ff-oa-Nty"/>
                                 <exclude reference="KAg-tB-2yR"/>
+                                <exclude reference="ny4-qi-pHv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -821,14 +832,20 @@
                                 <include reference="cmp-wx-55V"/>
                                 <include reference="1pr-Yg-ygN"/>
                                 <include reference="HB7-0c-SPO"/>
-                                <include reference="HIV-5v-sTX"/>
                                 <include reference="4ff-oa-Nty"/>
                                 <include reference="KAg-tB-2yR"/>
+                                <include reference="ny4-qi-pHv"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="lblHeader" destination="Zdl-dM-ooN" id="ctb-16-KC0"/>
+                        <outlet property="txtEmail" destination="cmp-wx-55V" id="5gx-n5-Fdt"/>
+                        <outlet property="txtIn" destination="ny4-qi-pHv" id="Crf-gu-99o"/>
+                        <outlet property="txtLocation" destination="HB7-0c-SPO" id="vGI-Yz-aek"/>
+                        <outlet property="txtPassword" destination="VKy-sO-2EL" id="Fss-UA-nnn"/>
+                        <outlet property="txtTel" destination="1pr-Yg-ygN" id="NOn-uU-uiB"/>
+                        <outlet property="txtUsername" destination="wbj-Nx-4Nt" id="mWU-71-ynf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYy-ha-Vpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
