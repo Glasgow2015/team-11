@@ -11,6 +11,7 @@ import UIKit
 class ProjectVC : UITableViewController{
     var user = User.shareInstance
     var titleHeader : String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,7 @@ class ProjectVC : UITableViewController{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let object = user.adminItem[indexPath.row] as! Project
         return cell
         
     }

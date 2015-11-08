@@ -74,12 +74,13 @@
                 <animations/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="HUD-6s-cfL" secondAttribute="bottom" id="4iJ-ln-Y7B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="121.5" id="9Wk-A4-fIy"/>
                     <constraint firstAttribute="trailingMargin" secondItem="HUD-6s-cfL" secondAttribute="trailing" id="ICT-RY-Ey2"/>
                     <constraint firstItem="Dt6-bZ-IEd" firstAttribute="leading" secondItem="GTP-nc-oRB" secondAttribute="leadingMargin" constant="-8" id="KcI-Ga-cYN"/>
                     <constraint firstItem="Dt6-bZ-IEd" firstAttribute="top" secondItem="GTP-nc-oRB" secondAttribute="topMargin" constant="-8" id="Qo9-dM-Tyr"/>
                     <constraint firstAttribute="leadingMargin" secondItem="HUD-6s-cfL" secondAttribute="leading" id="YGe-Zo-2Wd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="159.5" id="hKw-DI-3d8"/>
                     <constraint firstItem="HUD-6s-cfL" firstAttribute="top" secondItem="GTP-nc-oRB" secondAttribute="topMargin" constant="221" id="kOk-u2-wtp"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Dt6-bZ-IEd" secondAttribute="bottom" constant="159.5" id="pBY-dz-Yyc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Dt6-bZ-IEd" secondAttribute="trailing" constant="-8" id="tV5-Ep-1Z6"/>
                 </constraints>
                 <variation key="default">
@@ -92,14 +93,15 @@
                         <exclude reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
+                        <exclude reference="9Wk-A4-fIy"/>
+                        <exclude reference="KcI-Ga-cYN"/>
+                        <exclude reference="Qo9-dM-Tyr"/>
+                        <exclude reference="hKw-DI-3d8"/>
+                        <exclude reference="tV5-Ep-1Z6"/>
                         <exclude reference="4iJ-ln-Y7B"/>
                         <exclude reference="ICT-RY-Ey2"/>
                         <exclude reference="YGe-Zo-2Wd"/>
                         <exclude reference="kOk-u2-wtp"/>
-                        <exclude reference="KcI-Ga-cYN"/>
-                        <exclude reference="Qo9-dM-Tyr"/>
-                        <exclude reference="pBY-dz-Yyc"/>
-                        <exclude reference="tV5-Ep-1Z6"/>
                     </mask>
                 </variation>
                 <variation key="widthClass=compact">
@@ -112,14 +114,15 @@
                         <include reference="HUD-6s-cfL"/>
                     </mask>
                     <mask key="constraints">
+                        <include reference="9Wk-A4-fIy"/>
+                        <include reference="KcI-Ga-cYN"/>
+                        <include reference="Qo9-dM-Tyr"/>
+                        <exclude reference="hKw-DI-3d8"/>
+                        <include reference="tV5-Ep-1Z6"/>
                         <include reference="4iJ-ln-Y7B"/>
                         <include reference="ICT-RY-Ey2"/>
                         <include reference="YGe-Zo-2Wd"/>
                         <include reference="kOk-u2-wtp"/>
-                        <include reference="KcI-Ga-cYN"/>
-                        <include reference="Qo9-dM-Tyr"/>
-                        <include reference="pBY-dz-Yyc"/>
-                        <include reference="tV5-Ep-1Z6"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
@@ -132,7 +135,7 @@
                 <outlet property="lblLocation" destination="Q8C-rn-jp5" id="ba6-bv-Wmw"/>
                 <outlet property="lblTitle" destination="NKF-fv-47K" id="mUu-58-Oxo"/>
             </connections>
-            <point key="canvasLocation" x="70" y="76"/>
+            <point key="canvasLocation" x="82" y="71"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -12,6 +12,7 @@ import Bolts
 
 @objc protocol ParseControllerDelegate: class{
     optional func finishLoading(imga : UIImage, date: String, description: String, latitude: String, longtitude : String)
+    optional func finishLoading2()
     optional func finishSaving()
 }
 
@@ -100,10 +101,6 @@ class ParseController {
             } else {
                 //println(objects)
                 for object in objects! {
-                    des = object["description"] as! String
-                    latitude = object["location_lat"] as! String
-                    longtitude = object["location_long"] as! String
-                    
                     
                     let profileImage = object["imageFile"] as! PFFile
                     profileImage.getDataInBackgroundWithBlock {
@@ -114,7 +111,14 @@ class ParseController {
                             imga = image!
                             
                         //}
-                    self.delegate?.finishLoading!(imga!, date: d , description: des, latitude: latitude, longtitude: longtitude)
+                        
+                    des = object["description"] as! String
+                    latitude = object["location_lat"] as! String
+                    longtitude = object["location_long"] as! String
+                    var pj = Project(title: "JP Morgan",img: imga!, date: d, description: des, lat: latitude, long: longtitude)
+                    user.addItem(pj);
+                    self.delegate?.finishLoading2!()
+                    //self.delegate?.finishLoading!(imga!, date: d , description: des, latitude: latitude, longtitude: longtitude)
                     }
                     //print("des=\(des) lat=\(latitude) imga=\(imga)")
                     //title : String,img: UIImage, date : String, description : String, lat : String, long : String

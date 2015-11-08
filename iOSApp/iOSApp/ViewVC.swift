@@ -62,6 +62,7 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (user.username == "admin"){
             let cell = tableView.cellForRowAtIndexPath(indexPath)
+            
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
             performSegueWithIdentifier("showProject", sender: cell)
         }
@@ -121,8 +122,10 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     
     func finishLoading(imga : UIImage, date: String, description: String, latitude: String, longtitude : String) {
         var pj = Project(title: "JP Morgan",img: imga, date: date, description: description, lat: latitude, long: longtitude)
-        print(imga)
         user.addItem(pj);
+        tableView.reloadData()
+    }
+    func finishLoading2() {
         tableView.reloadData()
     }
 }
