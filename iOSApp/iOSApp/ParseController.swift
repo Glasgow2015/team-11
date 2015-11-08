@@ -88,12 +88,8 @@ class ParseController {
         user.addAdminItem(prj)
         
         
-        
-        
-        
-        
         query.findObjectsInBackgroundWithBlock {
-            (objects: [AnyObject]?, error: NSError?) -> Void in
+            (objects:[PFObject]?, error:NSError?) -> Void in
             if let error = error {
                 // There was an error
             } else {
@@ -103,9 +99,18 @@ class ParseController {
                     var latitude : String = object["location_lat"] as! String
                     var longtitude : String = object["location_long"] as! String
                     var d = "07/11/2015"
-                    var home = Project(title: t, date: d, description: des, lat: latitude, long: longtitude)
-                    self.loadRoom(home)
-                    user.addHome(home)
+                    var t = ""
+                    
+                    let mixPhoto = object["imageFile"] as! PFFile
+                    
+                    //query?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) -> Void in
+                    
+                    mixPhoto.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                    
+                    ) }
+                    
+                    //var home = Project(title: t, date: d, description: des, lat: latitude, long: longtitude)
+                   
                 }
                 self.delegate?.finishLoading!()
             }
