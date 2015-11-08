@@ -23,6 +23,7 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.reloadData()
         //p.work()
         p.loadProject()
         p.delegate = self
@@ -36,6 +37,7 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     
     
     override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
         super.viewWillAppear(animated)
     }
     
@@ -79,7 +81,6 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        
         let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.Project.rawValue, forIndexPath: indexPath) as! ProjectCell
         cell.lblTitle.text = user.item[indexPath.row].title
         cell.lblDescription.text = (user.item[indexPath.row] as! Project).description
