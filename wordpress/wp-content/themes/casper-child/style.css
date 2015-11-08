@@ -1,18 +1,57 @@
-@charset "UTF-8";
+/*
+  Theme Name:       Casper Child
+  Theme URI:        https://github.com/lacymorrow/casper-wp
+  Author:           Lacy Morrow
+  Author URI:       http://lacymorrow.com
+  Description:      Casper Child Theme
+  Version:          1.0.0
+  Template:         casper
+  Usage: Copy the casper-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+*/
+
+
 /*  Team 11 CSS Document */
 
 
-.button{
-    height: 30px;
-    line-height: 28px;
-    padding: 0 12px 2px;
+.button-full {
+	height: 35px;
+	width: 50%;
+	padding:0;
+	border:0;
+	font-size: 1em;
+	}
+
+.post-footer {
+    display: none;
 }
 
-.button.button-color {
-    background: #00a0d2;
-    border-color: #0073aa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
-    box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
-    color: #fff;
-    text-decoration: none;
+.post-meta { 
+    display: none; 
+} 
+
+.pagination a {
+    color: #3a4145;
 }
+
+.hentry::after {
+  border: 1px solid #3a4145;
+}
+
+.hentry {
+  border-bottom: 1px solid #3a4145;
+}
+
+.widget-area {
+  color: #3a4145;
+}
+
+a:hover {
+  color: #008338;
+}
+
+.widget-area {
+    color: #00833a;
+}
+
+.img-home{
+	}
