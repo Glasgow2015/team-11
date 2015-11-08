@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Bolts
 
 class ViewController: UIViewController {
 
@@ -18,14 +19,14 @@ class ViewController: UIViewController {
         
         print(PFUser.currentUser())
         
-        /*
+        
         let testObject = PFObject(className: "Report")
         testObject["username"] = "Matchima"
         testObject["uploader"] = PFUser.currentUser()
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
-        */
+        
     }
 
     @IBAction func save(sender: AnyObject) {
