@@ -11,6 +11,7 @@ import UIKit
 class ReportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     
+    @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var lblBorder: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var location: UITextField!
@@ -30,6 +31,7 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     
    
     @IBAction func useCurrentLocation(sender: AnyObject) {
+        
     }
     @IBAction func saveBtn(sender: AnyObject) {
         if(imageView.image != nil){
@@ -57,7 +59,11 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         lblBorder.layer.borderColor = UIColor.lightGrayColor().CGColor
-        lblBorder.layer.borderWidth = 2.0;
+        lblBorder.layer.borderWidth = 2.0
+        txtDescription.layer.borderColor = UIColor.lightGrayColor().CGColor
+        txtDescription.layer.borderWidth = 0.5
+        txtDescription.layer.cornerRadius = 3
+        
         self.title = "Report Vandalism"
         // Do any additional setup after loading the view.
     }
