@@ -29,8 +29,12 @@ class User {
     var userLocation : CLLocationCoordinate2D = CLLocationCoordinate2D()
     var userLevel : String = ""
     var item : [Item] = []
+    var adminItem : [Item] = []
     func addItem(item:Item) {
         self.item.append(item)
+    }
+    func addAdminItem(item:Item){
+        self.adminItem.append(item)
     }
     
     

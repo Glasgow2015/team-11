@@ -61,13 +61,10 @@ class ViewVC : UITableViewController, UserControllerDelegate{
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        print("IN")
         
         if segue.identifier == "showProject" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ProjectVC
-                //controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                //controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
