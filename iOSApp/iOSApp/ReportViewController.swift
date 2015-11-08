@@ -14,7 +14,9 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     
     var loc:CLLocationCoordinate2D = CLLocationCoordinate2D()
     let locationManager = CLLocationManager()
+    var user = User.shareInstance
     
+    @IBOutlet weak var txtLocation: UITextField!
     @IBOutlet weak var txtDescription: UITextView!
     @IBOutlet weak var lblBorder: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -52,17 +54,18 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
     
    
     @IBAction func useCurrentLocation(sender: AnyObject) {
-        
+        txtLocation.text = String(loc.latitude) + " " + String(loc.latitude)
     }
     @IBAction func saveBtn(sender: AnyObject) {
         if(imageView.image != nil){
             let p = ParseController();
-            p.addReport(imageView.image!,loc: loc,des: txtDescription.text);
+            if (user.username == "admin"){
+                p.addProject(imageView.image!, des: txtDescription.text, loc: loc)
+            }else{
+                p.addReport(imageView.image!,loc: loc,des: txtDescription.text);
+            }
         }
     }
-    @IBAction func cancelBtn(sender: AnyObject) {
-    }
-    
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         var temp : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -77,8 +80,11 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
         txtDescription.layer.borderColor = UIColor.lightGrayColor().CGColor
         txtDescription.layer.borderWidth = 0.5
         txtDescription.layer.cornerRadius = 3
-        
-        self.title = "Report Vandalism"
+        if (user.username == "admin"){
+            self.title = "New Project"
+        }else{
+            self.title = "Report Vandalism"
+        }
         
         initLocationMan()
         // Do any additional setup after loading the view.

@@ -23,8 +23,7 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-            p.work()
+        p.work()
         
         let titleView = UIImageView(image: UIImage(named: "logo.png"))
         self.navigationItem.titleView = titleView
@@ -59,9 +58,11 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        performSegueWithIdentifier("showProject", sender: cell)
+        if (user.username == "admin"){
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            performSegueWithIdentifier("showProject", sender: cell)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -78,6 +79,13 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
         cell.lblTitle.text = user.item[indexPath.row].title
         cell.lblDescription.text = (user.item[indexPath.row] as! Project).description
         cell.lblLocation.text = "Glasgow"
+        if (user.username == "admin"){
+            cell.btnEdit.hidden = false
+            cell.btnStar.hidden = true
+        }else if (user.username != ""){
+            cell.btnEdit.hidden = true
+            cell.btnStar.hidden = false
+        }
         return cell
     
     }
@@ -94,5 +102,15 @@ class ViewVC : UITableViewController, UserControllerDelegate, ParseControllerDel
     func removeUserView() {
         userView?.view.removeFromSuperview()
         userView = nil
+    }
+    
+    func initAdminView(){
+        self.navigationItem.leftBarButtonItem?.title = "+ Project"
+        tableView.reloadData()
+    }
+    
+    func initVolunteerView() {
+        self.navigationItem.leftBarButtonItem?.title = "Report"
+        tableView.reloadData()
     }
 }

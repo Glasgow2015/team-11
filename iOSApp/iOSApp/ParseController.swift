@@ -57,12 +57,41 @@ class ParseController {
         }
     }
     
+    func addProject(img: UIImage, des: String, loc: CLLocationCoordinate2D){
+        let post = PFObject(className: "Project")
+        var imageData = img.lowestQualityJPEGNSData // UIImagePNGRepresentation(self.imageView.image.!)
+        var parseImageFile = PFFile(name:"name",data: imageData)
+        //post["uploader"] = PFUser.currentUser()
+        post["imageFile"] = parseImageFile
+        post["description"] = des
+        post["location_lat"] = String(loc.latitude) // as! String
+        post["location_long"] = String(loc.longitude) //as! String
+        post["skill"] = "gardening"
+        
+        post.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if success == true {
+                print("Score created with ID: \(post.objectId)")
+            } else {
+                print("EEEEEEEEE\(error)")
+            }
+        }
+    }
     
     func loadProject(){
         let user = User.shareInstance
         var query = PFQuery(className:"Project")
         
-        /*
+        let prj = Project(title:"Green Campus", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
+        let prj2 = Project(title:"Code for good", date : "01/01/2000", description : "Better environment for campus", lat : "0.00", long : "0.00")
+        user.addItem(prj)
+        user.addItem(prj2)
+        user.addAdminItem(prj)
+        
+        
+        
+        
+        
+        
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in
             if let error = error {
@@ -81,29 +110,11 @@ class ParseController {
                 self.delegate?.finishLoading!()
             }
         }
-        */
-    }
-    
-    
-    func addProject(img: UIImage, des: String, loc: String){
-        let post = PFObject(className: "Report")
-        var imageData = img.lowestQualityJPEGNSData // UIImagePNGRepresentation(self.imageView.image.!)
-        var parseImageFile = PFFile(name:"name",data: imageData)
-        //post["uploader"] = PFUser.currentUser()
-        post["imageFile"] = parseImageFile
-        post["description"] = des
-        post["location_lat"] = 55.864237;
-        post["location_long"] = -4.251806;
-        post["skill"] = "gardening"
         
-        post.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            if success == true {
-                print("Score created with ID: \(post.objectId)")
-            } else {
-                print("EEEEEEEEE\(error)")
-            }
-        }
     }
+    
+    
+    
     
     
     func addressToLatLong(add:String){

@@ -10,6 +10,8 @@ import UIKit
 
 @objc protocol UserControllerDelegate: class{
     optional func removeUserView()
+    optional func initAdminView()
+    optional func initVolunteerView()
 }
 
 class UserVC: UIViewController {
@@ -20,11 +22,24 @@ class UserVC: UIViewController {
     @IBOutlet weak var btnCancel: UIButton!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    var user = User.shareInstance
     
     @IBAction func btnCancel(sender: AnyObject) {
         self.delegate?.removeUserView!()
     }
     
+    @IBAction func btnLoginClicked(sender: AnyObject) {
+        user.username = username.text!
+        user.password = password.text!
+        if (user.username == "admin"){
+            self.delegate?.initAdminView!()
+        }else{
+            self.delegate?.initVolunteerView!()
+        }
+        self.delegate?.removeUserView!()
+    }
+    
+    /*
     @IBAction func btnLogin(sender: AnyObject) {
         if(username.text == "admin"){
             
@@ -32,7 +47,7 @@ class UserVC: UIViewController {
             
         }
         self.delegate?.removeUserView!()
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
