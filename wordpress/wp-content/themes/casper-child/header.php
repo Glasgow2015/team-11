@@ -46,6 +46,8 @@
                 <?php endif; ?>
                 <h1 class="blog-title"><?php bloginfo( 'name' ); ?></h1>
                 <a href="http://ec2-54-216-244-128.eu-west-1.compute.amazonaws.com/wordpress/wp-login.php"><button type="button" class="button-full">Sign up/in</button></a>
+               
+                <a href="http://ec2-54-216-244-128.eu-west-1.compute.amazonaws.com/wordpress/index.php/report-incident/"><button type="button" class="button-full">Report</button></a>
                 <h2 class="blog-description"><?php bloginfo( 'description' ); ?></h2>
             </div>
         </div>
