@@ -10,6 +10,7 @@ import UIKit
 
 class ReportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    
     @IBOutlet weak var lblBorder: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var location: UITextField!
@@ -27,7 +28,23 @@ class ReportViewController: UIViewController, UINavigationControllerDelegate, UI
         self.presentViewController(img, animated: true, completion: nil)
     }
     
+   
     @IBAction func useCurrentLocation(sender: AnyObject) {
+    }
+    @IBAction func saveBtn(sender: AnyObject) {
+        if(imageView.image != nil){
+            /*
+            let post = PFObject(className: "Report")
+            var imageData = UIImagePNGRepresentation(self.imageView.image!)
+            var parseImageFile = PFFile(name:"name",data: imageData!)
+            post["imageFile"] = parseImageFile
+            post.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                print("file has been saved.")
+            }
+            */
+        }
+    }
+    @IBAction func cancelBtn(sender: AnyObject) {
     }
     
     
